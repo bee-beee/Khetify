@@ -68,8 +68,7 @@ React (Exploratory) — Component-based architecture (farmer-platform.jsx)
 
 Clone the repository:
 
-git clone https://github.com/your-username/khetify.git
-cd khetify
+git clonebee-beee.github.io/Khetify/
 
 Run using a local server:
 
