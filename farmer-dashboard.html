@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Dashboard - Khetify</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 5L25 15H30L35 25L30 35H10L5 25L10 15H15L20 5Z" fill="currentColor"/>
+                    <circle cx="20" cy="20" r="3" fill="white"/>
+                </svg>
+                <span class="logo-text">Khetify</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="marketplace.html">Marketplace</a>
+                <a href="pricing.html">Pricing</a>
+                <div class="user-menu">
+                    <span class="user-name">Ramesh Kumar</span>
+                    <div class="user-avatar">RK</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Container -->
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Dashboard</h3>
+                <nav class="sidebar-nav">
+                    <a href="#" class="sidebar-link active">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <rect x="3" y="3" width="6" height="6" stroke="currentColor" stroke-width="2"/>
+                            <rect x="11" y="3" width="6" height="6" stroke="currentColor" stroke-width="2"/>
+                            <rect x="3" y="11" width="6" height="6" stroke="currentColor" stroke-width="2"/>
+                            <rect x="11" y="11" width="6" height="6" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>Overview</span>
+                    </a>
+                    <a href="#" class="sidebar-link">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M3 6H17M3 10H17M3 14H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>My Products</span>
+                    </a>
+                    <a href="#" class="sidebar-link">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <rect x="3" y="5" width="14" height="12" stroke="currentColor" stroke-width="2"/>
+                            <path d="M7 5V3M13 5V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Orders</span>
+                    </a>
+                    <a href="#" class="sidebar-link">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M3 10L7 14L17 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Settings</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <!-- Farmer Profile Card -->
+            <div class="profile-banner">
+                <div class="profile-info">
+                    <div class="profile-avatar-large">RK</div>
+                    <div class="profile-details">
+                        <h1 class="profile-name">Ramesh Kumar</h1>
+                        <p class="profile-location">📍 Village Chandpur, Thrissur, Kerala</p>
+                        <div class="profile-meta">
+                            <span class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M8 5V8L10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                Member since Jan 2024
+                            </span>
+                            <span class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 2L9.5 6L14 6.5L11 10L11.5 14L8 12L4.5 14L5 10L2 6.5L6.5 6L8 2Z" fill="currentColor"/>
+                                </svg>
+                                4.8 Rating
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <a href="pricing.html" class="upgrade-badge">
+                    Upgrade to Pro ⚡
+                </a>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: rgba(74, 93, 35, 0.1); color: var(--earth-medium);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 8V16M8 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <p class="stat-label">Total Revenue</p>
+                        <p class="stat-value">₹24,580</p>
+                        <p class="stat-change positive">+12% this month</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: rgba(199, 125, 75, 0.1); color: var(--clay);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="4" y="8" width="16" height="12" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 8V6C8 4.89543 8.89543 4 10 4H14C15.1046 4 16 4.89543 16 6V8" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <p class="stat-label">Total Orders</p>
+                        <p class="stat-value">127</p>
+                        <p class="stat-change positive">+8 new orders</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: rgba(212, 165, 116, 0.1); color: var(--wheat);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 8L7 12L17 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <p class="stat-label">Products Listed</p>
+                        <p class="stat-value">18</p>
+                        <p class="stat-change neutral">6 in stock</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Product Section -->
+            <div class="dashboard-section">
+                <div class="section-header-dash">
+                    <h2>Add New Product</h2>
+                    <p>List fresh produce from your farm</p>
+                </div>
+                <div class="add-product-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="product-name">Product Name *</label>
+                            <input type="text" id="product-name" placeholder="e.g., Organic Tomatoes" />
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Category *</label>
+                            <select id="category">
+                                <option>Select category</option>
+                                <option>Vegetables</option>
+                                <option>Fruits</option>
+                                <option>Dairy</option>
+                                <option>Organic</option>
+                                <option>Homemade</option>
+                                <option>Grains</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Price per Kg *</label>
+                            <input type="number" id="price" placeholder="₹ 0" />
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Available Quantity (kg) *</label>
+                            <input type="number" id="quantity" placeholder="0" />
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="description">Description</label>
+                            <textarea id="description" rows="3" placeholder="Tell customers about your product..."></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Product Photo</label>
+                            <div class="file-upload">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                    <rect x="8" y="12" width="32" height="24" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="18" cy="20" r="3" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M8 30L16 22L24 30L32 22L40 30" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p>Click to upload or drag and drop</p>
+                                <span>PNG, JPG up to 5MB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button class="btn btn-secondary">Cancel</button>
+                        <button class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 5V15M5 10H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Add Product</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Products -->
+            <div class="dashboard-section">
+                <div class="section-header-dash">
+                    <h2>My Products</h2>
+                    <p>Manage your listings</p>
+                </div>
+                <div class="product-grid-dash">
+                    <div class="product-card-dash">
+                        <div class="product-image-dash">
+                            <span class="product-emoji">🍅</span>
+                        </div>
+                        <div class="product-info-dash">
+                            <h3>Organic Tomatoes</h3>
+                            <p class="product-price-dash">₹40/kg</p>
+                            <p class="product-stock">15 kg in stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M14 6L6 14M6 6L14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card-dash">
+                        <div class="product-image-dash">
+                            <span class="product-emoji">🥕</span>
+                        </div>
+                        <div class="product-info-dash">
+                            <h3>Fresh Carrots</h3>
+                            <p class="product-price-dash">₹35/kg</p>
+                            <p class="product-stock">8 kg in stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M14 6L6 14M6 6L14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card-dash">
+                        <div class="product-image-dash">
+                            <span class="product-emoji">🥬</span>
+                        </div>
+                        <div class="product-info-dash">
+                            <h3>Spinach</h3>
+                            <p class="product-price-dash">₹30/kg</p>
+                            <p class="product-stock out-of-stock">Out of stock</p>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M14 6L6 14M6 6L14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Orders -->
+            <div class="dashboard-section">
+                <div class="section-header-dash">
+                    <h2>Recent Orders</h2>
+                    <p>Latest customer orders</p>
+                </div>
+                <div class="orders-list">
+                    <div class="order-card">
+                        <div class="order-header">
+                            <div>
+                                <p class="order-id">#KH-3421</p>
+                                <p class="order-date">Today, 10:30 AM</p>
+                            </div>
+                            <span class="order-status status-pending">Pending</span>
+                        </div>
+                        <div class="order-items">
+                            <p>Organic Tomatoes × 5kg, Fresh Carrots × 3kg</p>
+                        </div>
+                        <div class="order-footer">
+                            <p class="order-customer">Priya Menon</p>
+                            <p class="order-total">₹335</p>
+                        </div>
+                    </div>
+                    <div class="order-card">
+                        <div class="order-header">
+                            <div>
+                                <p class="order-id">#KH-3420</p>
+                                <p class="order-date">Yesterday, 4:15 PM</p>
+                            </div>
+                            <span class="order-status status-completed">Completed</span>
+                        </div>
+                        <div class="order-items">
+                            <p>Organic Tomatoes × 10kg</p>
+                        </div>
+                        <div class="order-footer">
+                            <p class="order-customer">Anand Pillai</p>
+                            <p class="order-total">₹400</p>
+                        </div>
+                    </div>
+                    <div class="order-card">
+                        <div class="order-header">
+                            <div>
+                                <p class="order-id">#KH-3418</p>
+                                <p class="order-date">2 days ago</p>
+                            </div>
+                            <span class="order-status status-completed">Completed</span>
+                        </div>
+                        <div class="order-items">
+                            <p>Fresh Carrots × 8kg, Spinach × 2kg</p>
+                        </div>
+                        <div class="order-footer">
+                            <p class="order-customer">Lakshmi Nair</p>
+                            <p class="order-total">₹340</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
